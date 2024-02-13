@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="css/default.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/slideshow.css">
     </head>
     <body>
 
@@ -37,7 +38,7 @@
         <!-- preloader end  -->
 
         <!-- header start -->
-        <header>
+        <!-- <header>
             <div class="header-top d-none d-lg-block">
                 <div class="container">
                     <div class="row">
@@ -64,7 +65,7 @@
                     <div class="row align-items-center">
                         <div class="col-xl-2 col-lg-1">
                             <div class="logo">
-                                <a href="index.html"><img src="img/logo/logo%20burbujitas.png" alt="" width="100" height="100"></a>
+                                <a href="index.html"><img src="img/logo/logo%20burbujitas.png" alt="" class="img-fluid"></a>
                             </div>
                         </div>
                         <div class="col-xl-10 col-lg-11">
@@ -103,17 +104,210 @@
                     </div>
                 </div>
             </div>
+        </header> -->
+
+
+
+        <header class="header-area">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="left">
+                                <li><span><i class="far fa-clock"></i></span> 9:30am - 6:30pm Mon - Sun</li>
+                                <li><span><i class="far fa-phone"></i></span> +800-123-4567 6587</li>
+                                <li><span><i class="far fa-map-marker-alt"></i></span> Anmoore Road Brooklyn, NY 230
+                                </li>
+                            </ul>
+                            <ul class="right">
+                                <li><a href="#!"><i class="fab fa-facebook-messenger"></i></a></li>
+                                <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#!"><i class="fab fa-vimeo-v"></i></a></li>
+                                <li><a href="#!"><i class="fab fa-skype"></i></a></li>
+                                <li><a href="#!"><i class="fas fa-rss"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom-area uk-sticky" data-uk-sticky="top: 250; animation: uk-animation-slide-top;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 col-lg-2 col-6">
+                            <div class="logo">
+                                <a href="index.html"><img src="img/logo/logo burbujitas.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 d-none d-lg-block">
+                            <div class="main-menu-wrap">
+                                <nav id="mobile-menu" class="main-menu" style="display: inline-block;">
+                                    <ul class="main-menu-list ul_li">
+                                        <li class="active"><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li class="menu-item-has-children"><a href="#!">Pages</a>
+                                            <ul class="submenu">
+                                                <li><a href="teachers.html">Teachers</a></li>
+                                                <li><a href="teacher-single.html">Teacher Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="classes.html">Classes</a>
+                                            <ul class="submenu">
+                                                <li><a href="classes.html">Classes</a></li>
+                                                <li><a href="class-single.html">Class Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="shop.html">Shop</a>
+                                            <ul class="submenu">
+                                                <li><a href="shop.html">Shop Sidebar</a></li>
+                                                <li><a href="shop-single.html">Shop Details</a></li>
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="blog.html">Blog</a>
+                                            <ul class="submenu">
+                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-6">
+                            <div class="header-right">
+                                <div class="header-btn">
+                                    <a class="thm-btn" href="contact.html">Admissaion Now</a>
+                                </div>
+                                <!-- <div class="side-mobile-menu">
+                                    <button class="side-info-close"><i class="far fa-times"></i></button>
+                                    <div class="mobile-menu"></div>
+                                </div>
+                                <div class="side-menu-icon d-lg-none">
+                                    <button class="side-toggle"><i class="far fa-bars"></i></button>
+                                </div> -->
+                                <div class="offcanvas-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="uk-sticky-placeholder" hidden="" style="height: 101px; margin: 0px;"></div>
         </header>
+
         <!-- header end -->
         
         <main>
             <!-- banner area start -->
-            <section class="banner-area section-notch">
-                <div class="hero-bg-img slider-height d-flex align-items-center" data-background="img/bg/banner-bg.jpg">
+            <!-- Slider -->
+<section class="slider-section banner-area section-notch">
+    <div class="hero-bg-img slider-height">
+        <!-- <div class="banner-overlay"></div> -->
+
+	<div id="carousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel" data-slide-to="1"></li>
+			<li data-target="#carousel" data-slide-to="2"></li>
+		</ol> <!-- End of Indicators -->
+
+		<!-- Carousel Content -->
+        
+		<div class="carousel-inner" role="listbox">
+            <div class="banner-overlay"></div>
+			<div class="carousel-item item-01 active">
+                <div class="banner-overlay"></div>
+				<div class="carousel-caption d-none d-md-block"> 
+                    
+                    <div class="container mt-5" style="height: 100%;">
+                        <div class="row mt-5">
+                            <div class="col-12 mb-0">
+                                <div class="banner-content">
+                                    <h3>Descubriendo y aprendiendo con</h3>
+                                    <h2>Nuestras niñas y niños</h2>
+                                    <p>36 años dedicados en cuerpo y alma al fomento de civismo y cultura, en nuestros estudiantes.</p>
+                                    <div class="banner-btn">
+                                        <a class="thm-btn thm-btn-2" href="#">Inscripciones abiertas</a>
+                                        <a class="thm-btn" href="#">Nuestro equipo</a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div> <!-- End of Carousel Item -->
+
+			<div class="carousel-item item-02">
+                <div class="banner-overlay"></div>
+				<div class="carousel-caption d-none d-md-block">
+                    <div class="container mt-5" style="height: 100%;">
+                        <div class="row mt-5">
+                            <div class="col-12 mb-0">
+                                <div class="banner-content">
+                                    <h3>Descubriendo y aprendiendo con</h3>
+                                    <h2>Nuestras niñas y niños</h2>
+                                    <p>36 años dedicados en cuerpo y alma al fomento de civismo y cultura, en nuestros estudiantes.</p>
+                                    <div class="banner-btn">
+                                        <a class="thm-btn thm-btn-2" href="#">Inscripciones abiertas</a>
+                                        <a class="thm-btn" href="#">Nuestro equipo</a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div> <!-- End of Carousel Item -->
+
+			<div class="carousel-item item-03">
+                <div class="banner-overlay"></div>
+				<div class="carousel-caption d-none d-md-block">
+                    <div class="container mt-5" style="height: 100%;">
+                        <div class="row mt-5">
+                            <div class="col-12 mb-0">
+                                <div class="banner-content">
+                                    <h3>Descubriendo y aprendiendo con</h3>
+                                    <h2>Nuestras niñas y niños</h2>
+                                    <p>36 años dedicados en cuerpo y alma al fomento de civismo y cultura, en nuestros estudiantes.</p>
+                                    <div class="banner-btn">
+                                        <a class="thm-btn thm-btn-2" href="#">Inscripciones abiertas</a>
+                                        <a class="thm-btn" href="#">Nuestro equipo</a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div> <!-- End of Carousel Item -->
+		</div> <!-- End of Carousel Content -->
+
+		<!-- Previous & Next -->
+		<a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only"></span>
+		</a>
+		<a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only"></span>
+		</a>
+	</div>
+</div>
+    <!-- End of Carousel -->
+</section> <!-- End of Slider -->
+            <!-- <section class="banner-area section-notch">
+                 <div class="hero-bg-img slider-height">
+                    
+<ul class="slideshow">
+	<li><span></span></li>
+  <li><span> </span></li>
+	<li><span></span></li> 
+</ul>
                     <div class="banner-overlay"></div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-8 col-md-10">
+                    <div class="container mt-5" style="height: 100%;">
+                        <div class="row mt-5">
+                            <div class="col-12 mb-0">
                                 <div class="banner-content">
                                     <h3>Descubriendo y aprendiendo con</h3>
                                     <h2>Nuestras niñas y niños</h2>
@@ -127,7 +321,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- banner area end -->
 
             <!-- feature area start -->

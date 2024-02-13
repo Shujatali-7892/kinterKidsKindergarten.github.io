@@ -328,7 +328,10 @@ header .header-top .left {
 	text-transform: uppercase;
 }
 .main-menu ul li:hover > a {
-	color: #23cc88;
+	color: #23cc88 !important;
+}
+.main-menu ul li:hover > a, .main-menu ul .active > a {
+    color: #23cc88;
 }
 .header-button {
 	margin-top: 19px;

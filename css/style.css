@@ -1817,3 +1817,14 @@ header .header-top .left {
 	  opacity: 0;
 	}
   }
+  .first-div .carousel-caption {
+    position: sticky !important;
+    right: 0 !important;
+    top: 162px !important;
+    left: 0 !important;
+    z-index: 10 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    color: #fff;
+    text-align: left !important;
+}
